@@ -18,85 +18,128 @@ body{
     place-content: center;
 }
 
-/* Card style setup */
+:root {
+    color: hsl(215, 51%, 70%);
+}
+
+/* card style setup */
 
 .card {
     background-color: hsl(216, 50%, 16%);
     max-width: 20rem;
-    border-radius: 1.3em;
+    border-radius: 1.1em;
     padding: 1.2em;
     margin: 0 auto;
-    box-shadow: 0px 31px 2px 19px rgba(7, 7, 7, 0.38);
-
     line-height: 1.5;
 }
 
-.image img {
+/* card image style setup */
+
+.card-image{
+    position: relative;
+}
+
+.card-image img{
     width: 100%;
     border-radius: .7em;
 }
 
-/* Section style setup */
+.image-hover-bg{
+    background: url(images/icon-view.svg) center no-repeat, hsl(178, 100%, 50%);
+    position: absolute;
+    width: 17.5em;
+    height: 17.5em;
+    bottom: .45em;
+    border-radius: .7em;
+    opacity: .5;
+    place-content: center;
+    display: none;
+}
 
-section {
+.card-image:hover .image-hover-bg{
+    display: block;
+    cursor: pointer;
+}
+
+/* section style setup */
+
+section h1 {
+    font-weight: 500;
+    margin-top: .5em;
+    margin-bottom: .3em;
+    font-size: 1.3em;
     color: hsl(0, 0%, 100%);
 }
 
-section h3 {
-    font-weight: 500;
-    padding-top: .8em;
-    padding-bottom: .8em;
+section h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 section p {
-    color: hsl(215, 51%, 70%);
-    font-weight: 200;
     padding-top: .8em;
+    padding-bottom: .8em;
+    font-size: 1em;
+}
+
+/* values */
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9em;
+    border-bottom: 1px solid white;
+    margin-bottom: 1.1em;
     padding-bottom: .8em;
 }
 
-section ul {
-    list-style-type: none;
-    display: inline;
+.values p:first-child{
+    display: flex;
+    color: hsl(178, 100%, 50%);
 }
 
-section ul li {
-    display: inline;
+.values p:first-child img{
+    align-self: center;
+    margin-right: .5em; 
 }
 
-li:first-child {
-    margin-right: 3em;
+.values p:last-child{
+    display: flex;
 }
 
-li:last-child {
-    padding-left: 5em;
-    text-align: right;
+.values p:last-child img{
+    align-self: center;
+    margin-right: .5em;
 }
 
+/* avatar style setup */
 
-/* footer */
 
-.line {
-    border: none;
-    border-top: 0.01px solid white;
+.avatar {
+    display: flex;
+    justify-content: start;
+    padding-bottom: .5em;
 }
 
-footer {
-    padding-top: 1.8em;
-    padding-bottom: 2.8em;
+.avatar img {
+    width: 2.2em;
+    border-radius: 50%;
+    border: .1em solid white;
+    align-self: center;
+    margin-right: .8em;
 }
 
-footer img {
-    width: 2em;
-    position: relative;
-    top: 1.5em;
-    
+.avatar span {
+    align-self: center;
 }
 
-footer span {
-    position: relative;
-    top: 1em;
-    left: 1em;
+.name {
+    color: hsl(0, 0%, 100%);
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 
@@ -104,6 +147,7 @@ footer span {
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    margin-top: 5em;
 }
 .attribution a { 
         color: hsl(228, 45%, 44%); 
