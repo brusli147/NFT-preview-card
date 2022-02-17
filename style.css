@@ -76,7 +76,7 @@ section h1 a{
     color: hsl(0, 0%, 100%);
 }
 
-section h1:hover{
+section h1 a:hover{
     color: hsl(178, 100%, 50%);
 }
 
