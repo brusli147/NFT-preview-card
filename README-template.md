@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![This is the screenshot of the project](images/Capture.png)
+![This is the screenshot of the project](/images/Capture.PNG)
 
 ### Links
 
