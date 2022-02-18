@@ -22,6 +22,11 @@ body{
     color: hsl(215, 51%, 70%);
 }
 
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
 /* card style setup */
 
 .card {
@@ -29,8 +34,8 @@ body{
     max-width: 20rem;
     border-radius: 1.1em;
     padding: 1.2em;
-    margin: 0 auto;
     line-height: 1.5;
+    margin: 1rem;
 }
 
 /* card image style setup */
@@ -92,7 +97,7 @@ section p {
     display: flex;
     justify-content: space-between;
     font-size: .9em;
-    border-bottom: 1px solid white;
+    border-bottom: .1px solid white;
     margin-bottom: 1.1em;
     padding-bottom: .8em;
 }
